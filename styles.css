@@ -102,7 +102,8 @@ footer {
 .newsletter {
   text-align: center;
   padding: 2rem;
-  background: #f9f9f9;
+  background: #4a90e2; /* New background color (blue) */
+  color: #fff; /* White text for better contrast */
   border-radius: 10px;
   margin: 2rem 0;
 }
@@ -110,6 +111,26 @@ footer {
 .newsletter h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.newsletter p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter .cta-button {
+  background: #ff6f61; /* Button color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.newsletter .cta-button:hover {
+  background: #e65a50; /* Darker shade on hover */
 }
 
 .social-media a {
