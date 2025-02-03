@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The Soni Family Foundation is dedicated to empowering communities through education, health, and sustainable development.">
-  <meta name="keywords" content="nonprofit, charity, education, healthcare, sustainability, donate">
+  <meta name="description" content="Empowering communities through education, health, and sustainable development.">
   <title>Soni Family Foundation</title>
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
 <body>
+
   <header>
     <nav>
       <ul>
@@ -32,28 +32,30 @@
     </div>
   </section>
 
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>The Soni Family Foundation is a 501(c)(3) nonprofit organization dedicated to creating lasting change by supporting initiatives in education, healthcare, and community development. Founded in 2023, we believe in the power of collective action to transform lives.</p>
-    <p><strong>Tax-Exempt Status:</strong> Donations to the Soni Family Foundation are tax-deductible under IRS Section 501(c)(3).</p>
-  </section>
-
   <section id="programs" class="programs">
     <h2>Our Programs</h2>
     <div class="program-list">
       <div class="program-item">
+        <img src="images/education.jpg" alt="Education Program">
         <h3>Education for All</h3>
-        <p>Providing scholarships, school supplies, and mentorship programs to underprivileged students.</p>
+        <p>Providing scholarships, school supplies, and mentorship programs.</p>
       </div>
       <div class="program-item">
+        <img src="images/health.jpg" alt="Health Program">
         <h3>Health & Wellness</h3>
-        <p>Supporting healthcare access, mental health resources, and wellness programs in underserved communities.</p>
+        <p>Supporting healthcare access, mental health resources, and wellness programs.</p>
       </div>
       <div class="program-item">
+        <img src="images/sustainability.jpg" alt="Sustainability Program">
         <h3>Sustainable Development</h3>
-        <p>Promoting eco-friendly practices, renewable energy, and community resilience projects.</p>
+        <p>Promoting eco-friendly practices, renewable energy, and resilience projects.</p>
       </div>
     </div>
+  </section>
+
+  <section id="blog" class="blog">
+    <h2>Latest News</h2>
+    <div id="blog-posts" class="blog-posts"></div>
   </section>
 
   <section id="get-involved" class="get-involved">
@@ -62,63 +64,20 @@
       <div class="option">
         <h3>Donate</h3>
         <p>Your contributions help us fund critical programs and initiatives.</p>
-        <a href="#donate" class="cta-button">Donate Now</a>
+        <a href="https://www.paypal.com/donate" class="cta-button" target="_blank">Donate Now</a>
       </div>
       <div class="option">
         <h3>Volunteer</h3>
-        <p>Join our team of dedicated volunteers and make a difference in your community.</p>
+        <p>Join our team of dedicated volunteers and make a difference.</p>
         <a href="#contact" class="cta-button">Sign Up</a>
       </div>
-      <div class="option">
-        <h3>Partner</h3>
-        <p>Collaborate with us to amplify our impact through corporate partnerships.</p>
-        <a href="#contact" class="cta-button">Contact Us</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="blog" class="blog">
-    <h2>Latest News</h2>
-    <div class="blog-posts">
-      <div class="post">
-        <h3>New Scholarship Program Launched</h3>
-        <p>We are excited to announce our new scholarship program for underprivileged students. Read more about how you can apply or support.</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-      <div class="post">
-        <h3>Community Health Fair Success</h3>
-        <p>Our recent health fair provided free screenings and resources to over 500 community members. Learn more about the impact.</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="testimonials" class="testimonials">
-    <h2>What People Are Saying</h2>
-    <div class="testimonial-list">
-      <div class="testimonial-item">
-        <p>"The Soni Family Foundation has transformed our community. Their programs have given us hope and opportunities we never thought possible."</p>
-        <p><strong>- Jane Doe, Community Member</strong></p>
-      </div>
-      <div class="testimonial-item">
-        <p>"I am proud to support such a transparent and impactful organization. Every dollar truly makes a difference."</p>
-        <p><strong>- John Smith, Donor</strong></p>
-      </div>
-    </div>
-  </section>
-
-  <section id="partners" class="partners">
-    <h2>Our Partners</h2>
-    <div class="partner-logos">
-      <img src="images/partner1.png" alt="Partner 1">
-      <img src="images/partner2.png" alt="Partner 2">
-      <img src="images/partner3.png" alt="Partner 3">
     </div>
   </section>
 
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <form id="contact-form" action="#" method="post">
+    <form id="contact-form" action="https://formsubmit.co/sonifamilyfoundation@gmail.com" method="POST">
+      <input type="hidden" name="_next" value="thank-you.html">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
       <label for="email">Email:</label>
@@ -131,37 +90,21 @@
   </section>
 
   <footer>
-    <div class="footer-content">
-      <div class="newsletter">
-        <h3>Subscribe to Our Newsletter</h3>
-        <p>Join our community and stay updated with our latest news and events.</p>
-        <a href="https://forms.gle/h3V6q9B3SuZ9hfuEA" class="cta-button" target="_blank">Subscribe Now</a>
-      </div>
-      <div class="social-media">
-        <h3>Follow Us</h3>
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">Instagram</a>
-      </div>
+    <div class="newsletter">
+      <h3>Subscribe to Our Newsletter</h3>
+      <form id="newsletter-form">
+        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
     </div>
-    <p>&copy; 2025 Soni Family Foundation. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    <div class="social-media">
+      <h3>Follow Us</h3>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+    <p>&copy; 2025 Soni Family Foundation. All rights reserved.</p>
   </footer>
 
-  <script>
-    // Smooth Scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
-      });
-    });
-
-    // Form Validation
-    document.getElementById("contact-form").addEventListener("submit", function(event) {
-      event.preventDefault();
-      document.getElementById("form-status").innerText = "Thank you! Your message has been sent.";
-      this.reset();
-    });
-  </script>
 </body>
 </html>
