@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The Soni Family Foundation is dedicated to empowering communities through education, health, and sustainable development.">
-  <meta name="keywords" content="nonprofit, charity, education, healthcare, sustainability, donate">
   <title>Soni Family Foundation</title>
   <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
@@ -118,7 +115,7 @@
 
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <form id="contact-form" action="#" method="post">
+    <form action="#" method="post">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
       <label for="email">Email:</label>
@@ -127,7 +124,6 @@
       <textarea id="message" name="message" rows="5" required></textarea>
       <button type="submit">Send</button>
     </form>
-    <p id="form-status"></p>
   </section>
 
   <footer>
@@ -144,24 +140,7 @@
         <a href="#">Instagram</a>
       </div>
     </div>
-    <p>&copy; 2025 Soni Family Foundation. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    <p>&copy; 2023 Soni Family Foundation. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
   </footer>
-
-  <script>
-    // Smooth Scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
-      });
-    });
-
-    // Form Validation
-    document.getElementById("contact-form").addEventListener("submit", function(event) {
-      event.preventDefault();
-      document.getElementById("form-status").innerText = "Thank you! Your message has been sent.";
-      this.reset();
-    });
-  </script>
 </body>
 </html>
